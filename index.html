@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario Empresa Ficticia</title>
+  <link rel="stylesheet" href="style.css" title="Color">
+</head>
+<body>
+
+  <div class="empresa">
+    <h2>EMPRESA FICTICIA S.L.</h2>
+    <p><strong>CIF:</strong> B12345678</p>
+    <p><strong>Dirección:</strong> Calle Falsa Nº 123, 4ºA</p>
+    <p><strong>Teléfono:</strong> +34 912 345 678</p>
+  </div>
+
+  <h3>Formulario de Registro</h3>
+
+  <form>
+    <fieldset>
+      <legend>Datos Personales</legend>
+      <table>
+        <tr>
+          <!-- Primer bloque -->
+          <td>
+            <label for="nombre">Nombre: *</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="apellido1">Primer Apellido: *</label><br>
+            <input type="text" id="apellido1" name="apellido1" required><br><br>
+
+            <label for="apellido2">Segundo Apellido:</label><br>
+            <input type="text" id="apellido2" name="apellido2">
+          </td>
+
+          <!-- Segundo bloque con divisor a la izquierda -->
+          <td class="bloque-separado">
+            <label for="dni">DNI: *</label><br>
+            <input type="text" id="dni" name="dni" required><br><br>
+
+            <label for="fecha">Fecha de Nacimiento: *</label><br>
+            <input type="date" id="fecha" name="fecha_nacimiento" required><br><br>
+
+            <label for="direccion">Dirección: *</label><br>
+            <input type="text" id="direccion" name="direccion" required>
+          </td>
+
+          <!-- Tercer bloque con divisor a la izquierda -->
+          <td class="bloque-separado">
+            <label for="puerta">Puerta/Portal:</label><br>
+            <input type="text" id="puerta" name="puerta"><br><br>
+
+            <label for="numero">Número: *</label><br>
+            <input type="text" id="numero" name="numero" required><br><br>
+
+            <label for="telefono">Teléfono: *</label><br>
+            <input type="tel" id="telefono" name="telefono" required>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend>Consentimientos</legend>
+      <div class="consentimiento">
+        <input type="checkbox" id="condiciones" name="condiciones" required>
+        <label for="condiciones">He leído y acepto las condiciones. *</label>
+      </div>
+
+      <div class="consentimiento">
+        <p>Consiento el tratamiento de mis datos conforme a la normativa vigente. Los datos serán usados únicamente con fines administrativos y de contacto.</p>
+        <input type="checkbox" id="consentimiento" name="consentimiento" required>
+        <label for="consentimiento">Consiento este tratamiento. *</label>
+      </div>
+
+      <div class="consentimiento">
+        <label for="tipo_tratamiento">Tipo de tratamiento: *</label><br> 
+        <select id="tipo_tratamiento" name="tipo_tratamiento" required>
+          <option value="">--Selecciona una opción--</option>
+          <option value="todos">Todos</option>
+          <option value="necesarios">Necesarios</option>
+          <option value="peticion">A petición</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Tabla de referencia centrada y expandida -->
+  <div class="referencia">
+    <table>
+      <tr><td>Referencia</td></tr>
+      <tr><td>REF-392817</td></tr>
+    </table>
+  </div>
+
+</body>
+</html>
